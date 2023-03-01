@@ -1,0 +1,893 @@
+I (1290) wifi:set rx active PTI: 0, rx ack PTI: 12, and default PTI: 1
+I (1290) wifi:mode : sta (58:cf:79:70:35:ac) + softAP (58:cf:79:70:35:ad)
+I (1290) wifi:enable tsf
+I (1300) wifi:Total power save buffer number: 16
+I (1300) wifi:Init max üESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xf (BROWNOUT_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd6100,len:0xc84
+load:0x403ce000,len:0x714
+load:0x403d0000,len:0x26ec
+entry 0x403ce000
+I (38) cpu_start: Pro cpu up.
+I (50) cpu_start: Pro cpu start user code
+I (50) cpu_start: cpu freq: 160000000
+I (50) cpu_start: Application information:
+I (50) cpu_start: Project name:     smartsensor
+I (54) cpu_start: App version:      1
+I (57) cpu_start: Compile time:     May 12 2022 11:42:55
+I (62) cpu_start: ELF file SHA256:  6477d2ac5b035e52...
+I (67) cpu_start: ESP-IDF:          v4.3-dirty
+I (71) heap_init: Initializing. RAM available for dynamic allocation:
+I (77) heap_init: At 3FC960F0 len 00029F10 (167 KiB): DRAM
+I (83) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (88) heap_init: At 50000010 len 00001FE0 (7 KiB): RTCRAM
+I (94) spi_flash: detected chip: generic
+I (97) spi_flash: flash io: dio
+I (101) sleep: Configure to isolate all GPIO pins in sleep state
+I (106) sleep: Enable automatic switching of GPIO sleep configuration
+I (112) cpu_start: Starting scheduler.
+I (120) smartsensor: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (120) smartsensor: inc_trigger = 4
+I (140) smartsensor: Updating inc_trigger to 5 in NVS ... Done
+I (140) smartsensor: Committing updates in NVS ... Done
+Version 1.2.7 16 amp
+
+
+
+
+I (140) WISE_DEXT: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (150) WISE_DEXT: Restart counter = 4
+I (150) WISE_DEXT: Updating restart counter to 5 in NVS ... Done
+I (160) WISE_DEXT: Committing updates in NVS ... Done
+I (160) WISE_NVS: Key [incl_done] does not exist
+W (170) WISE_DEXT: Inclusion was not complete in previous boot cycle!
+I (170) appwifi: Erasing wifi credentials in nvm
+I (180) coexist: coexist rom version 9387209
+I (180) pp: pp rom version: 9387209
+I (190) net80211: net80211 rom version: 9387209
+I (200) wifi:wifi driver task: 3fc9dc64, prio:23, stack:6144, core=0
+I (200) system_api: Base MAC address is not set
+I (200) system_api: read default base MAC address from EFUSE
+I (210) wifi:wifi firmware version: c7d0450
+I (210) wifi:wifi certification version: v7.0
+I (210) wifi:config NVS flash: enabled
+I (220) wifi:config nano formating: enabled
+I (220) wifi:Init data frame dynamic rx buffer num: 32
+I (230) wifi:Init management frame dynamic rx buffer num: 32
+I (230) wifi:Init management short buffer num: 32
+I (240) wifi:Init dynamic tx buffer num: 32
+I (240) wifi:Init static tx FG buffer num: 2
+I (240) wifi:Init static rx buffer size: 1600
+I (250) wifi:Init static rx buffer num: 10
+I (250) wifi:Init dynamic rx buffer num: 32
+I (260) wifi_init: rx ba win: 6
+I (260) wifi_init: tcpip mbox: 32
+I (260) wifi_init: udp mbox: 6
+I (260) wifi_init: tcp mbox: 6
+I (270) wifi_init: tcp tx win: 5744
+I (270) wifi_init: tcp rx win: 5744
+I (270) wifi_init: tcp mss: 1440
+I (280) wifi_init: WiFi IRAM OP enabled
+I (280) wifi_init: WiFi RX IRAM OP enabled
+I (280) appwifi: Erased wifi NVS
+I (290) wifi:Deinit lldesc rx mblock:10
+I (300) WISE_NVS: Key [wrkng_ssid] does not exist
+I (300) coexist: coexist rom version 9387209
+I (300) pp: pp rom version: 9387209
+I (300) net80211: net80211 rom version: 9387209
+I (320) wifi:wifi driver task: 3fc9de6c, prio:23, stack:6144, core=0
+I (320) wifi:wifi firmware version: c7d0450
+I (320) wifi:wifi certification version: v7.0
+I (320) wifi:config NVS flash: enabled
+I (320) wifi:config nano formating: enabled
+I (330) wifi:Init data frame dynamic rx buffer num: 32
+I (330) wifi:Init management frame dynamic rx buffer num: 32
+I (340) wifi:Init management short buffer num: 32
+I (340) wifi:Init dynamic tx buffer num: 32
+I (350) wifi:Init static tx FG buffer num: 2
+I (350) wifi:Init static rx buffer size: 1600
+I (350) wifi:Init static rx buffer num: 10
+I (360) wifi:Init dynamic rx buffer num: 32
+I (360) wifi_init: rx ba win: 6
+I (370) wifi_init: tcpip mbox: 32
+I (370) wifi_init: udp mbox: 6
+I (370) wifi_init: tcp mbox: 6
+I (370) wifi_init: tcp tx win: 5744
+I (380) wifi_init: tcp rx win: 5744
+I (380) wifi_init: tcp mss: 1440
+I (380) wifi_init: WiFi IRAM OP enabled
+I (390) wifi_init: WiFi RX IRAM OP enabled
+I (390) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (410) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (420) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (430) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (440) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (450) gpio: GPIO[20]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+Stored Data Flag = AA55 P_F = 1.193343 V_F = 0.127776 C_F = 9.861235
+I (460) WISE_NVS: Key [incl_done] does not exist
+I (460) WISE_NVS: Key [incl_done] does not exist
+1---------------------------------------caliberationStatusFlag 1 registartion status 0-1
+switching on load =>>>>>>>>>>>>>>>>>>>>>>>>>
+POWER 0.000000 CURRENT 18.512630  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 532676 VOLTAGE 0 POWER 0
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 18.512630 currentPercent 100.000000
+I (500) smartsensor: Network change
+No Fluctuations VOLT = 0 CURR = 0
+ValuesUpdateFlagCurrent 0
+POWER 0.000000 CURRENT 9.417600  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 1047107 VOLTAGE 0 POWER 546833
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 9.417600 currentPercent 100.000000
+No Fluctuations VOLT = 0 CURR = 0
+ValuesUpdateFlagCurrent 0
+POWER 0.000000 CURRENT 9.417600  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 1047107 VOLTAGE 0 POWER 1056127
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 9.417600 currentPercent 100.000000
+No Fluctuations VOLT = 0 CURR = 0
+ValuesUpdateFlagCurrent 0
+POWER 0.000000 CURRENT 9.417600  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 1047107 VOLTAGE 0 POWER 2560723
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 9.417600 currentPercent 100.000000
+Check manual pair mode 1
+I (3500) WISE_NVS: Key [incl_done] does not exist
+I (3500) WISE_OTA: OTA Task Initialized
+I (3500) smartsensor: wise_nvm_restore_callback for datalen[492]
+I (3500) smartsensor: Restoring wise nvm data from NVS ... length[492] err[4354] err_str[Failed!] 
+I (3510) WISE_DINT: WISE version[0] state[0] broker_host[] broker_port[] domain_id[] home_id[]
+No Fluctuations VOLT = 0 CURR = 0
+ValuesUpdateFlagCurrent 0
+POWER 0.000000 CURRENT 9.417600  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 1047107 VOLTAGE 0 POWER 3066207
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 9.417600 currentPercent 100.000000
+I (3540) WISE_DINT: WISE hub_id[] serial_number[] inclusion_id[] device_id[] device_contype[]
+I (3550) WISE_DINT: WISE device_username[] device_password[] device_name[] device_version[]
+I (3560) smartsensor: This is ESP32 chip with 1 CPU cores, WiFi/BLE, silicon revision 3, 2MB external flash
+I (3570) smartsensor: WISE_Network_Change_Start...
+I (3570) WISE_DEXT: WISE_Network_Change_Start -> Wifi Scan started!...
+I (3580) coexist: coexist rom version 9387209
+I (3580) wifi_init: rx ba win: 6
+I (3590) wifi_init: tcpip mbox: 32
+I (3590) wifi_init: udp mbox: 6
+I (3590) wifi_init: tcp mbox: 6
+I (3600) wifi_init: tcp tx win: 5744
+I (3600) wifi_init: tcp rx win: 5744
+I (3600) wifi_init: tcp mss: 1440
+I (3610) wifi_init: WiFi IRAM OP enabled
+I (3610) wifi_init: WiFi RX IRAM OP enabled
+I (3610) WISE_DEXT: initializing AP mode...
+DHCP server started 
+W (3620) event: handler already registered, overwriting
+W (3620) event: handler already registered, overwriting
+I (3630) coexist: coexist rom version 9387209
+I (3630) wifi_init: rx ba win: 6
+I (3640) wifi_init: tcpip mbox: 32
+I (3640) wifi_init: udp mbox: 6
+I (3640) wifi_init: tcp mbox: 6
+I (3640) wifi_init: tcp tx win: 5744
+I (3650) wifi_init: tcp rx win: 5744
+I (3650) wifi_init: tcp mss: 1440
+I (3650) wifi_init: WiFi IRAM OP enabled
+I (3660) wifi_init: WiFi RX IRAM OP enabled
+I (3660) appwifi: Setting WiFi configuration SSID[WISE-JIO-7035AC]...
+I (4190) phy_init: phy_version 500,985899c,Apr 19 2021,16:05:08
+I (4300) wifi:set rx active PTI: 0, rx ack PTI: 12, and default PTI: 1
+I (4300) wifi:mode : sta (58:cf:79:70:35:ac) + softAP (58:cf:79:70:35:ad)
+I (4300) wifi:enable tsf
+I (4310) wifi:Total power save buffer number: 16
+I (4310) wifi:Init max length of beacon: 752/752úESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xf (BROWNOUT_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd6100,len:0xc84
+load:0x403ce000,len:0x714
+load:0x403d0000,len:0x26ec
+entry 0x403ce000
+I (38) cpu_start: Pro cpu up.
+I (50) cpu_start: Pro cpu start user code
+I (50) cpu_start: cpu freq: 160000000
+I (50) cpu_start: Application information:
+I (50) cpu_start: Project name:     smartsensor
+I (54) cpu_start: App version:      1
+I (57) cpu_start: Compile time:     May 12 2022 11:42:55
+I (62) cpu_start: ELF file SHA256:  6477d2ac5b035e52...
+I (67) cpu_start: ESP-IDF:          v4.3-dirty
+I (71) heap_init: Initializing. RAM available for dynamic allocation:
+I (77) heap_init: At 3FC960F0 len 00029F10 (167 KiB): DRAM
+I (83) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (88) heap_init: At 50000010 len 00001FE0 (7 KiB): RTCRAM
+I (94) spi_flash: detected chip: generic
+I (97) spi_flash: flash io: dio
+I (101) sleep: Configure to isolate all GPIO pins in sleep state
+I (106) sleep: Enable automatic switching of GPIO sleep configuration
+I (112) cpu_start: Starting scheduler.
+I (120) smartsensor: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (120) smartsensor: inc_trigger = 5
+I (140) smartsensor: Updating inc_trigger to 6 in NVS ... Done
+I (140) smartsensor: Committing updates in NVS ... Done
+Version 1.2.7 16 amp
+
+
+
+
+I (140) WISE_DEXT: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (150) WISE_DEXT: Restart counter = 5
+I (150) WISE_DEXT: Updating restart counter to 6 in NVS ... Done
+I (160) WISE_DEXT: Committing updates in NVS ... Done
+I (160) WISE_NVS: Key [incl_done] does not exist
+W (170) WISE_DEXT: Inclusion was not complete in previous boot cycle!
+I (170) appwifi: Erasing wifi credentials in nvm
+I (180) coexist: coexist rom version 9387209
+I (180) pp: pp rom version: 9387209
+I (190) net80211: net80211 rom version: 9387209
+I (200) wifi:wifi driver task: 3fc9dc64, prio:23, stack:6144, core=0
+I (200) system_api: Base MAC address is not set
+I (200) system_api: read default base MAC address from EFUSE
+I (210) wifi:wifi firmware version: c7d0450
+I (210) wifi:wifi certification version: v7.0
+I (210) wifi:config NVS flash: enabled
+I (220) wifi:config nano formating: enabled
+I (220) wifi:Init data frame dynamic rx buffer num: 32
+I (230) wifi:Init management frame dynamic rx buffer num: 32
+I (230) wifi:Init management short buffer num: 32
+I (240) wifi:Init dynamic tx buffer num: 32
+I (240) wifi:Init static tx FG buffer num: 2
+I (240) wifi:Init static rx buffer size: 1600
+I (250) wifi:Init static rx buffer num: 10
+I (250) wifi:Init dynamic rx buffer num: 32
+I (260) wifi_init: rx ba win: 6
+I (260) wifi_init: tcpip mbox: 32
+I (260) wifi_init: udp mbox: 6
+I (260) wifi_init: tcp mbox: 6
+I (270) wifi_init: tcp tx win: 5744
+I (270) wifi_init: tcp rx win: 5744
+I (270) wifi_init: tcp mss: 1440
+I (280) wifi_init: WiFi IRAM OP enabled
+I (280) wifi_init: WiFi RX IRAM OP enabled
+I (280) appwifi: Erased wifi NVS
+I (290) wifi:Deinit lldesc rx mblock:10
+I (300) WISE_NVS: Key [wrkng_ssid] does not exist
+I (300) coexist: coexist rom version 9387209
+I (300) pp: pp rom version: 9387209
+I (300) net80211: net80211 rom version: 9387209
+I (320) wifi:wifi driver task: 3fc9de6c, prio:23, stack:6144, core=0
+I (320) wifi:wifi firmware version: c7d0450
+I (320) wifi:wifi certification version: v7.0
+I (320) wifi:config NVS flash: enabled
+I (320) wifi:config nano formating: enabled
+I (330) wifi:Init data frame dynamic rx buffer num: 32
+I (330) wifi:Init management frame dynamic rx buffer num: 32
+I (340) wifi:Init management short buffer num: 32
+I (340) wifi:Init dynamic tx buffer num: 32
+I (350) wifi:Init static tx FG buffer num: 2
+I (350) wifi:Init static rx buffer size: 1600
+I (350) wifi:Init static rx buffer num: 10
+I (360) wifi:Init dynamic rx buffer num: 32
+I (360) wifi_init: rx ba win: 6
+I (370) wifi_init: tcpip mbox: 32
+I (370) wifi_init: udp mbox: 6
+I (370) wifi_init: tcp mbox: 6
+I (370) wifi_init: tcp tx win: 5744
+I (380) wifi_init: tcp rx win: 5744
+I (380) wifi_init: tcp mss: 1440
+I (380) wifi_init: WiFi IRAM OP enabled
+I (390) wifi_init: WiFi RX IRAM OP enabled
+I (390) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (410) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (420) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (430) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (440) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (450) gpio: GPIO[20]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+Stored Data Flag = AA55 P_F = 1.193343 V_F = 0.127776 C_F = 9.861235
+I (460) WISE_NVS: Key [incl_done] does not exist
+I (460) WISE_NVS: Key [incl_done] does not exist
+1---------------------------------------caliberationStatusFlag 1 registartion status 0-1
+switching on load =>>>>>>>>>>>>>>>>>>>>>>>>>
+POWER 0.000000 CURRENT 18.512772  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 532672 VOLTAGE 0 POWER 0
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 18.512772 currentPercent 100.000000
+Check manual pair mode 1
+I (500) WISE_NVS: Key [incl_done] does not exist
+I (510) WISE_OTA: OTA Task Initialized
+I (510) smartsensor: wise_nvm_restore_callback for datalen[492]
+I (520) smartsensor: Restoring wise nvm data from NVS ... length[492] err[4354] err_str[Failed!] 
+I (530) WISE_DINT: WISE version[0] state[0] broker_host[] broker_port[] domain_id[] home_id[]
+I (530) WISE_DINT: WISE hub_id[] serial_number[] inclusion_id[] device_id[] device_contype[]
+I (540) WISE_DINT: WISE device_username[] device_password[] device_name[] device_version[]
+I (550) smartsensor: This is ESP32 chip with 1 CPU cores, WiFi/BLE, silicon revision 3, 2MB external flash
+I (560) smartsensor: WISE_Registration_Start...
+
+I (560) WISE_DEXT: WISE_Registration_Start -> Wifi Scan started!...
+I (570) coexist: coexist rom version 9387209
+I (570) wifi_init: rx ba win: 6
+I (580) wifi_init: tcpip mbox: 32
+I (580) wifi_init: udp mbox: 6
+I (580) wifi_init: tcp mbox: 6
+I (590) wifi_init: tcp tx win: 5744
+I (590) wifi_init: tcp rx win: 5744
+I (590) wifi_init: tcp mss: 1440
+I (590) wifi_init: WiFi IRAM OP enabled
+I (600) wifi_init: WiFi RX IRAM OP enabled
+I (600) WISE_DEXT: initializing AP mode...
+DHCP server started 
+W (610) event: handler already registered, overwriting
+W (610) event: handler already registered, overwriting
+I (620) coexist: coexist rom version 9387209
+I (620) wifi_init: rx ba win: 6
+I (620) wifi_init: tcpip mbox: 32
+I (630) wifi_init: udp mbox: 6
+I (630) wifi_init: tcp mbox: 6
+I (630) wifi_init: tcp tx win: 5744
+I (640) wifi_init: tcp rx win: 5744
+I (640) wifi_init: tcp mss: 1440
+I (640) wifi_init: WiFi IRAM OP enabled
+I (650) wifi_init: WiFi RX IRAM OP enabled
+I (650) appwifi: Setting WiFi configuration SSID[WISE-JIO-7035AC]...
+I (1180) phy_init: phy_version 500,985899c,Apr 19 2021,16:05:08
+I (1310) wifi:set rx active PTI: 0, rx ack PTI: 12, and default PTI: 1
+I (1310) wifi:mode : sta (58:cf:79:70:35:ac) + softAP (58:cf:79:70:35:ad)
+I (1310) wifi:enable tsf
+I (1310) wifi:Total power save buffer number: 16
+I (1320) wifi:Init maøESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xf (BROWNOUT_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd6100,len:0xc84
+load:0x403ce000,len:0x714
+load:0x403d0000,len:0x26ec
+entry 0x403ce000
+I (38) cpu_start: Pro cpu up.
+I (50) cpu_start: Pro cpu start user code
+I (50) cpu_start: cpu freq: 160000000
+I (50) cpu_start: Application information:
+I (50) cpu_start: Project name:     smartsensor
+I (54) cpu_start: App version:      1
+I (57) cpu_start: Compile time:     May 12 2022 11:42:55
+I (62) cpu_start: ELF file SHA256:  6477d2ac5b035e52...
+I (67) cpu_start: ESP-IDF:          v4.3-dirty
+I (71) heap_init: Initializing. RAM available for dynamic allocation:
+I (77) heap_init: At 3FC960F0 len 00029F10 (167 KiB): DRAM
+I (83) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (88) heap_init: At 50000010 len 00001FE0 (7 KiB): RTCRAM
+I (94) spi_flash: detected chip: generic
+I (97) spi_flash: flash io: dio
+I (101) sleep: Configure to isolate all GPIO pins in sleep state
+I (106) sleep: Enable automatic switching of GPIO sleep configuration
+I (112) cpu_start: Starting scheduler.
+I (120) smartsensor: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (120) smartsensor: inc_trigger = 6
+I (140) smartsensor: Updating inc_trigger to 7 in NVS ... Done
+I (140) smartsensor: Committing updates in NVS ... Done
+Version 1.2.7 16 amp
+
+
+
+
+I (140) WISE_DEXT: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (150) WISE_DEXT: Restart counter = 6
+I (150) WISE_DEXT: Updating restart counter to 7 in NVS ... Done
+I (160) WISE_DEXT: Committing updates in NVS ... Done
+I (160) WISE_NVS: Key [incl_done] does not exist
+W (170) WISE_DEXT: Inclusion was not complete in previous boot cycle!
+I (170) appwifi: Erasing wifi credentials in nvm
+I (180) coexist: coexist rom version 9387209
+I (180) pp: pp rom version: 9387209
+I (190) net80211: net80211 rom version: 9387209
+I (200) wifi:wifi driver task: 3fc9dc64, prio:23, stack:6144, core=0
+I (200) system_api: Base MAC address is not set
+I (200) system_api: read default base MAC address from EFUSE
+I (210) wifi:wifi firmware version: c7d0450
+I (210) wifi:wifi certification version: v7.0
+I (210) wifi:config NVS flash: enabled
+I (220) wifi:config nano formating: enabled
+I (220) wifi:Init data frame dynamic rx buffer num: 32
+I (230) wifi:Init management frame dynamic rx buffer num: 32
+I (230) wifi:Init management short buffer num: 32
+I (240) wifi:Init dynamic tx buffer num: 32
+I (240) wifi:Init static tx FG buffer num: 2
+I (240) wifi:Init static rx buffer size: 1600
+I (250) wifi:Init static rx buffer num: 10
+I (250) wifi:Init dynamic rx buffer num: 32
+I (260) wifi_init: rx ba win: 6
+I (260) wifi_init: tcpip mbox: 32
+I (260) wifi_init: udp mbox: 6
+I (260) wifi_init: tcp mbox: 6
+I (270) wifi_init: tcp tx win: 5744
+I (270) wifi_init: tcp rx win: 5744
+I (270) wifi_init: tcp mss: 1440
+I (280) wifi_init: WiFi IRAM OP enabled
+I (280) wifi_init: WiFi RX IRAM OP enabled
+I (280) appwifi: Erased wifi NVS
+I (290) wifi:Deinit lldesc rx mblock:10
+I (300) WISE_NVS: Key [wrkng_ssid] does not exist
+I (300) coexist: coexist rom version 9387209
+I (300) pp: pp rom version: 9387209
+I (300) net80211: net80211 rom version: 9387209
+I (320) wifi:wifi driver task: 3fc9de6c, prio:23, stack:6144, core=0
+I (320) wifi:wifi firmware version: c7d0450
+I (320) wifi:wifi certification version: v7.0
+I (320) wifi:config NVS flash: enabled
+I (320) wifi:config nano formating: enabled
+I (330) wifi:Init data frame dynamic rx buffer num: 32
+I (330) wifi:Init management frame dynamic rx buffer num: 32
+I (340) wifi:Init management short buffer num: 32
+I (340) wifi:Init dynamic tx buffer num: 32
+I (350) wifi:Init static tx FG buffer num: 2
+I (350) wifi:Init static rx buffer size: 1600
+I (350) wifi:Init static rx buffer num: 10
+I (360) wifi:Init dynamic rx buffer num: 32
+I (360) wifi_init: rx ba win: 6
+I (370) wifi_init: tcpip mbox: 32
+I (370) wifi_init: udp mbox: 6
+I (370) wifi_init: tcp mbox: 6
+I (370) wifi_init: tcp tx win: 5744
+I (380) wifi_init: tcp rx win: 5744
+I (380) wifi_init: tcp mss: 1440
+I (380) wifi_init: WiFi IRAM OP enabled
+I (390) wifi_init: WiFi RX IRAM OP enabled
+I (390) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (410) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (420) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (430) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (440) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (450) gpio: GPIO[20]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+Stored Data Flag = AA55 P_F = 1.193343 V_F = 0.127776 C_F = 9.861235
+I (460) WISE_NVS: Key [incl_done] does not exist
+I (460) WISE_NVS: Key [incl_done] does not exist
+1---------------------------------------caliberationStatusFlag 1 registartion status 0-1
+switching on load =>>>>>>>>>>>>>>>>>>>>>>>>>
+POWER 0.000000 CURRENT 18.513153  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 532661 VOLTAGE 0 POWER 0
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 18.513153 currentPercent 100.000000
+Check manual pair mode 1
+I (500) WISE_NVS: Key [incl_done] does not exist
+I (510) WISE_OTA: OTA Task Initialized
+I (510) smartsensor: wise_nvm_restore_callback for datalen[492]
+I (520) smartsensor: Restoring wise nvm data from NVS ... length[492] err[4354] err_str[Failed!] 
+I (530) WISE_DINT: WISE version[0] state[0] broker_host[] broker_port[] domain_id[] home_id[]
+I (530) WISE_DINT: WISE hub_id[] serial_number[] inclusion_id[] device_id[] device_contype[]
+I (540) WISE_DINT: WISE device_username[] device_password[] device_name[] device_version[]
+I (550) smartsensor: This is ESP32 chip with 1 CPU cores, WiFi/BLE, silicon revision 3, 2MB external flash
+I (560) smartsensor: WISE_Registration_Start...
+
+I (560) WISE_DEXT: WISE_Registration_Start -> Wifi Scan started!...
+I (570) coexist: coexist rom version 9387209
+I (570) wifi_init: rx ba win: 6
+I (580) wifi_init: tcpip mbox: 32
+I (580) wifi_init: udp mbox: 6
+I (580) wifi_init: tcp mbox: 6
+I (590) wifi_init: tcp tx win: 5744
+I (590) wifi_init: tcp rx win: 5744
+I (590) wifi_init: tcp mss: 1440
+I (590) wifi_init: WiFi IRAM OP enabled
+I (600) wifi_init: WiFi RX IRAM OP enabled
+I (600) WISE_DEXT: initializing AP mode...
+DHCP server started 
+W (610) event: handler already registered, overwriting
+W (610) event: handler already registered, overwriting
+I (620) coexist: coexist rom version 9387209
+I (620) wifi_init: rx ba win: 6
+I (620) wifi_init: tcpip mbox: 32
+I (630) wifi_init: udp mbox: 6
+I (630) wifi_init: tcp mbox: 6
+I (630) wifi_init: tcp tx win: 5744
+I (640) wifi_init: tcp rx win: 5744
+I (640) wifi_init: tcp mss: 1440
+I (640) wifi_init: WiFi IRAM OP enabled
+I (650) wifi_init: WiFi RX IRAM OP enabled
+I (650) appwifi: Setting WiFi configuration SSID[WISE-JIO-7035AC]...
+I (1180) phy_init: phy_version 500,985899c,Apr 19 2021,16:05:08
+I (1290) wifi:set rx active PTI: 0, rx ack PTI: 12, and default PTI: 1
+I (1290) wifi:mode : sta (58:cf:79:70:35:ac) + softAP (58:cf:79:70:35:ad)
+I (1290) wifi:enable tsf
+I (1300) wifi:Total power save buffer number: 16
+I (1300) wifi:Init mÿESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xf (BROWNOUT_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd6100,len:0xc84
+load:0x403ce000,len:0x714
+load:0x403d0000,len:0x26ec
+entry 0x403ce000
+I (38) cpu_start: Pro cpu up.
+I (50) cpu_start: Pro cpu start user code
+I (50) cpu_start: cpu freq: 160000000
+I (50) cpu_start: Application information:
+I (50) cpu_start: Project name:     smartsensor
+I (54) cpu_start: App version:      1
+I (57) cpu_start: Compile time:     May 12 2022 11:42:55
+I (62) cpu_start: ELF file SHA256:  6477d2ac5b035e52...
+I (67) cpu_start: ESP-IDF:          v4.3-dirty
+I (71) heap_init: Initializing. RAM available for dynamic allocation:
+I (77) heap_init: At 3FC960F0 len 00029F10 (167 KiB): DRAM
+I (83) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (88) heap_init: At 50000010 len 00001FE0 (7 KiB): RTCRAM
+I (94) spi_flash: detected chip: generic
+I (97) spi_flash: flash io: dio
+I (101) sleep: Configure to isolate all GPIO pins in sleep state
+I (106) sleep: Enable automatic switching of GPIO sleep configuration
+I (112) cpu_start: Starting scheduler.
+I (120) smartsensor: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (120) smartsensor: inc_trigger = 7
+I (140) smartsensor: Updating inc_trigger to 8 in NVS ... Done
+I (140) smartsensor: Committing updates in NVS ... Done
+Version 1.2.7 16 amp
+
+
+
+
+I (140) WISE_DEXT: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (150) WISE_DEXT: Restart counter = 7
+I (150) WISE_DEXT: Updating restart counter to 8 in NVS ... Done
+I (160) WISE_DEXT: Committing updates in NVS ... Done
+I (160) WISE_NVS: Key [incl_done] does not exist
+W (170) WISE_DEXT: Inclusion was not complete in previous boot cycle!
+I (170) appwifi: Erasing wifi credentials in nvm
+I (180) coexist: coexist rom version 9387209
+I (180) pp: pp rom version: 9387209
+I (190) net80211: net80211 rom version: 9387209
+I (200) wifi:wifi driver task: 3fc9dc64, prio:23, stack:6144, core=0
+I (200) system_api: Base MAC address is not set
+I (200) system_api: read default base MAC address from EFUSE
+I (210) wifi:wifi firmware version: c7d0450
+I (210) wifi:wifi certification version: v7.0
+I (210) wifi:config NVS flash: enabled
+I (220) wifi:config nano formating: enabled
+I (220) wifi:Init data frame dynamic rx buffer num: 32
+I (230) wifi:Init management frame dynamic rx buffer num: 32
+I (230) wifi:Init management short buffer num: 32
+I (240) wifi:Init dynamic tx buffer num: 32
+I (240) wifi:Init static tx FG buffer num: 2
+I (240) wifi:Init static rx buffer size: 1600
+I (250) wifi:Init static rx buffer num: 10
+I (250) wifi:Init dynamic rx buffer num: 32
+I (260) wifi_init: rx ba win: 6
+I (260) wifi_init: tcpip mbox: 32
+I (260) wifi_init: udp mbox: 6
+I (260) wifi_init: tcp mbox: 6
+I (270) wifi_init: tcp tx win: 5744
+I (270) wifi_init: tcp rx win: 5744
+I (270) wifi_init: tcp mss: 1440
+I (280) wifi_init: WiFi IRAM OP enabled
+I (280) wifi_init: WiFi RX IRAM OP enabled
+I (280) appwifi: Erased wifi NVS
+I (290) wifi:Deinit lldesc rx mblock:10
+I (300) WISE_NVS: Key [wrkng_ssid] does not exist
+I (300) coexist: coexist rom version 9387209
+I (300) pp: pp rom version: 9387209
+I (300) net80211: net80211 rom version: 9387209
+I (320) wifi:wifi driver task: 3fc9de6c, prio:23, stack:6144, core=0
+I (320) wifi:wifi firmware version: c7d0450
+I (320) wifi:wifi certification version: v7.0
+I (320) wifi:config NVS flash: enabled
+I (320) wifi:config nano formating: enabled
+I (330) wifi:Init data frame dynamic rx buffer num: 32
+I (330) wifi:Init management frame dynamic rx buffer num: 32
+I (340) wifi:Init management short buffer num: 32
+I (340) wifi:Init dynamic tx buffer num: 32
+I (350) wifi:Init static tx FG buffer num: 2
+I (350) wifi:Init static rx buffer size: 1600
+I (350) wifi:Init static rx buffer num: 10
+I (360) wifi:Init dynamic rx buffer num: 32
+I (360) wifi_init: rx ba win: 6
+I (370) wifi_init: tcpip mbox: 32
+I (370) wifi_init: udp mbox: 6
+I (370) wifi_init: tcp mbox: 6
+I (370) wifi_init: tcp tx win: 5744
+I (380) wifi_init: tcp rx win: 5744
+I (380) wifi_init: tcp mss: 1440
+I (380) wifi_init: WiFi IRAM OP enabled
+I (390) wifi_init: WiFi RX IRAM OP enabled
+I (390) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (400) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (410) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (420) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (430) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (440) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (450) gpio: GPIO[20]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+Stored Data Flag = AA55 P_F = 1.193343 V_F = 0.127776 C_F = 9.861235
+I (460) WISE_NVS: Key [incl_done] does not exist
+I (460) WISE_NVS: Key [incl_done] does not exist
+1---------------------------------------caliberationStatusFlag 1 registartion status 0-1
+switching on load =>>>>>>>>>>>>>>>>>>>>>>>>>
+POWER 0.000000 CURRENT 18.513571  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 532649 VOLTAGE 0 POWER 0
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 18.513571 currentPercent 100.000000
+I (500) smartsensor: factory_reset_erase_nvm
+I (510) coexist: coexist rom version 9387209
+I (510) wifi_init: rx ba win: 6
+I (510) wifi_init: tcpip mbox: 32
+I (520) wifi_init: udp mbox: 6
+I (520) wifi_init: tcp mbox: 6
+I (520) wifi_init: tcp tx win: 5744
+I (520) wifi_init: tcp rx win: 5744
+I (530) wifi_init: tcp mss: 1440
+I (530) wifi_init: WiFi IRAM OP enabled
+I (530) wifi_init: WiFi RX IRAM OP enabled
+I (540) smartsensor: Erased wifi NVS
+I (540) smartsensor: wifi_init_sta stop sta
+I (540) smartsensor: Erasing everything in NVS ... 
+I (560) smartsensor: Erasing everything in NVS ... Done
+I (560) smartsensor: Committing updates in NVS ... 
+I (560) smartsensor: Committing updates in NVS ... Done
+€ÒESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038365e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd6100,len:0xc84
+load:0x403ce000,len:0x714
+load:0x403d0000,len:0x26ec
+entry 0x403ce000
+I (42) cpu_start: Pro cpu up.
+I (54) cpu_start: Pro cpu start user code
+I (54) cpu_start: cpu freq: 160000000
+I (54) cpu_start: Application information:
+I (54) cpu_start: Project name:     smartsensor
+I (58) cpu_start: App version:      1
+I (62) cpu_start: Compile time:     May 12 2022 11:42:55
+I (67) cpu_start: ELF file SHA256:  6477d2ac5b035e52...
+I (72) cpu_start: ESP-IDF:          v4.3-dirty
+I (76) heap_init: Initializing. RAM available for dynamic allocation:
+I (82) heap_init: At 3FC960F0 len 00029F10 (167 KiB): DRAM
+I (87) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (93) heap_init: At 50000010 len 00001FE0 (7 KiB): RTCRAM
+I (98) spi_flash: detected chip: generic
+I (102) spi_flash: flash io: dio
+I (105) sleep: Configure to isolate all GPIO pins in sleep state
+I (111) sleep: Enable automatic switching of GPIO sleep configuration
+I (117) cpu_start: Starting scheduler.
+I (125) smartsensor: nvs_stats used_entries[63] free_entries[1197] total_entries[1260] namespace_count[5]
+I (125) smartsensor: inc_trigger is not initialized yet enabling inclusion_mode
+I (135) smartsensor: Updating inc_trigger to 1 in NVS ... Done
+I (145) smartsensor: Committing updates in NVS ... Done
+Version 1.2.7 16 amp
+
+
+
+
+I (155) WISE_DEXT: nvs_stats used_entries[64] free_entries[1196] total_entries[1260] namespace_count[5]
+I (155) WISE_DEXT: Restart counter is not initialized yet
+I (165) WISE_DEXT: Updating restart counter to 1 in NVS ... Done
+I (175) WISE_DEXT: Committing updates in NVS ... Done
+I (175) WISE_NVS: Key [incl_done] does not exist
+W (175) WISE_DEXT: Inclusion was not complete in previous boot cycle!
+I (185) appwifi: Erasing wifi credentials in nvm
+I (185) coexist: coexist rom version 9387209
+I (195) pp: pp rom version: 9387209
+I (195) net80211: net80211 rom version: 9387209
+I (215) wifi:wifi driver task: 3fc9dc68, prio:23, stack:6144, core=0
+I (215) system_api: Base MAC address is not set
+I (215) system_api: read default base MAC address from EFUSE
+I (225) wifi:wifi firmware version: c7d0450
+I (225) wifi:wifi certification version: v7.0
+I (225) wifi:config NVS flash: enabled
+I (225) wifi:config nano formating: enabled
+I (235) wifi:Init data frame dynamic rx buffer num: 32
+I (235) wifi:Init management frame dynamic rx buffer num: 32
+I (245) wifi:Init management short buffer num: 32
+I (245) wifi:Init dynamic tx buffer num: 32
+I (255) wifi:Init static tx FG buffer num: 2
+I (255) wifi:Init static rx buffer size: 1600
+I (255) wifi:Init static rx buffer num: 10
+I (265) wifi:Init dynamic rx buffer num: 32
+I (265) wifi_init: rx ba win: 6
+I (265) wifi_init: tcpip mbox: 32
+I (275) wifi_init: udp mbox: 6
+I (275) wifi_init: tcp mbox: 6
+I (275) wifi_init: tcp tx win: 5744
+I (285) wifi_init: tcp rx win: 5744
+I (285) wifi_init: tcp mss: 1440
+I (285) wifi_init: WiFi IRAM OP enabled
+I (295) wifi_init: WiFi RX IRAM OP enabled
+I (295) appwifi: Erased wifi NVS
+I (295) wifi:Deinit lldesc rx mblock:10
+I (315) WISE_NVS: Key [wrkng_ssid] does not exist
+I (315) coexist: coexist rom version 9387209
+I (315) pp: pp rom version: 9387209
+I (315) net80211: net80211 rom version: 9387209
+I (325) wifi:wifi driver task: 3fc9de70, prio:23, stack:6144, core=0
+I (325) wifi:wifi firmware version: c7d0450
+I (325) wifi:wifi certification version: v7.0
+I (335) wifi:config NVS flash: enabled
+I (335) wifi:config nano formating: enabled
+I (335) wifi:Init data frame dynamic rx buffer num: 32
+I (345) wifi:Init management frame dynamic rx buffer num: 32
+I (345) wifi:Init management short buffer num: 32
+I (355) wifi:Init dynamic tx buffer num: 32
+I (355) wifi:Init static tx FG buffer num: 2
+I (365) wifi:Init static rx buffer size: 1600
+I (365) wifi:Init static rx buffer num: 10
+I (365) wifi:Init dynamic rx buffer num: 32
+I (375) wifi_init: rx ba win: 6
+I (375) wifi_init: tcpip mbox: 32
+I (375) wifi_init: udp mbox: 6
+I (385) wifi_init: tcp mbox: 6
+I (385) wifi_init: tcp tx win: 5744
+I (385) wifi_init: tcp rx win: 5744
+I (395) wifi_init: tcp mss: 1440
+I (395) wifi_init: WiFi IRAM OP enabled
+I (395) wifi_init: WiFi RX IRAM OP enabled
+I (405) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (405) scan: 
+*****************
+NVS handle opened
+*****************
+
+I (415) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (425) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (435) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (435) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (445) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (455) gpio: GPIO[20]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+Stored Data Flag = AA55 P_F = 1.193343 V_F = 0.127776 C_F = 9.861235
+I (475) WISE_NVS: Key [incl_done] does not exist
+I (475) WISE_NVS: Key [incl_done] does not exist
+1---------------------------------------caliberationStatusFlag 1 registartion status 0-1
+switching on load =>>>>>>>>>>>>>>>>>>>>>>>>>
+POWER 0.000000 CURRENT 8.431836  VOLTAGE  0.000000
+PULSE COUNT  0 CURRENT 1169524 VOLTAGE 0 POWER 0
+FACTORS POWER 1.193343 CURRENT 9.861235 VOLTAGE 0.127776 
+Current values PREV 0.000000 Curnt 8.431836 currentPercent 100.000000
+Check manual pair mode 1
+I (515) WISE_NVS: Key [incl_done] does not exist
+I (515) WISE_OTA: OTA Task Initialized
+I (525) smartsensor: wise_nvm_restore_callback for datalen[492]
+I (525) smartsensor: Restoring wise nvm data from NVS ... length[492] err[4354] err_str[Failed!] 
+I (535) WISE_DINT: WISE version[0] state[0] broker_host[] broker_port[] domain_id[] home_id[]
+I (545) WISE_DINT: WISE hub_id[] serial_number[] inclusion_id[] device_id[] device_contype[]
+I (555) WISE_DINT: WISE device_username[] device_password[] device_name[] device_version[]
+I (565) smartsensor: This is ESP32 chip with 1 CPU cores, WiFi/BLE, silicon revision 3, 2MB external flash
+I (575) smartsensor: WISE_Registration_Start...
+
+I (575) WISE_DEXT: WISE_Registration_Start -> Wifi Scan started!...
+I (585) coexist: coexist rom version 9387209
+I (585) wifi_init: rx ba win: 6
+I (585) wifi_init: tcpip mbox: 32
+I (595) wifi_init: udp mbox: 6
+I (595) wifi_init: tcp mbox: 6
+I (595) wifi_init: tcp tx win: 5744
+I (595) wifi_init: tcp rx win: 5744
+I (605) wifi_init: tcp mss: 1440
+I (605) wifi_init: WiFi IRAM OP enabled
+I (605) wifi_init: WiFi RX IRAM OP enabled
+I (615) WISE_DEXT: initializing AP mode...
+DHCP server started 
+W (615) event: handler already registered, overwriting
+W (625) event: handler already registered, overwriting
+I (625) coexist: coexist rom version 9387209
+I (635) wifi_init: rx ba win: 6
+I (635) wifi_init: tcpip mbox: 32
+I (635) wifi_init: udp mbox: 6
+I (645) wifi_init: tcp mbox: 6
+I (645) wifi_init: tcp tx win: 5744
+I (645) wifi_init: tcp rx win: 5744
+I (655) wifi_init: tcp mss: 1440
+I (655) wifi_init: WiFi IRAM OP enabled
+I (655) wifi_init: WiFi RX IRAM OP enabled
+I (665) appwifi: Setting WiFi configuration SSID[WISE-JIO-7035AC]...
+I (1195) phy_init: phy_version 500,985899c,Apr 19 2021,16:05:08
+I (1305) wifi:set rx active PTI: 0, rx ack PTI: 12, and default PTI: 1
+I (1305) wifi:mode : sta (58:cf:79:70:35:ac) + softAP (58:cf:79:70:35:ad)
+I (1305) wifi:enable tsf
+I (1315) wifi:Total power save buffer number: 16
+I (1315) wifi:Init maxðESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xf (BROWNOUT_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd6100,len:0xc84
+load:0x403ce000,len:0x714
+load:0x403d0000,len:0x26ec
+entry 0x403ce000
+I (38) cpu_start: Pro cpu up.
+I (50) cpu_start: Pro cpu start user code
+I (50) cpu_start: cpu freq: 160000000
+I (50) cpu_start: Application information:
+I (50) cpu_start: Project name:     smartsensor
+I (54) cpu_start: App version:      1
+I (57) cpu_start: Compile time:     May 12 2022 11:42:55
+I (62) cpu_start: ELF file SHA256:  6477d2ac5b035e52...
+I (67) cpu_start: ESP-IDF:          v4.3-dirty
+I (71) heap_init: Initializing. RAM available for dynamic allocation:
+I (77) heap_init: At 3FC960F0 len 00029F10 (167 KiB): DRAM
+I (83) heap_init: At 3FCC0000 len 0001F060 (124 KiB): STACK/DRAM
+I (88) heap_init: At 50000010 len 00001FE0 (7 KiB): RTCRAM
+I (94) spi_flash: detected chip: generic
+I (97) spi_flash: flash io: dio
+I (101) sleep: Configure to isolate all GPIO pins in sleep state
+I (106) sleep: Enable automatic switching of GPIO sleep configuration
+I (112) cpu_start: Starting scheduler.
+I (120) smartsensor: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (120) smartsensor: inc_trigger = 1
+I (140) smartsensor: Updating inc_trigger to 2 in NVS ... Done
+I (140) smartsensor: Committing updates in NVS ... Done
+Version 1.2.7 16 amp
+
+
+
+
+I (140) WISE_DEXT: nvs_stats used_entries[65] free_entries[1195] total_entries[1260] namespace_count[5]
+I (150) WISE_DEXT: Restart counter = 1
+I (150) WISE_DEXT: Updating restart counter to 2 in NVS ... Done
+I (160) WISE_DEXT: Committing updates in NVS ... Done
+I (160) WISE_NVS: Key [incl_done] does not exist
+W (170) WISE_DEXT: Inclusion was not complete in previous boot cycle!
+I (170) appwifi: Erasing wifi credentials in nvm
+I (180) coexist: coexist rom version 9387209
+I (180) pp: pp rom version: 9387209
+I (190) net80211: net80211 rom version: 9387209
+I (200) wifi:wifi driver task: 3fc9dc64, prio:23, stack:6144, core=0
+I (200) system_api: Base MAC address is not set
+I (200) system_api: read default base MAC address from EFUSE
+I (210) wifi:wifi firmware version: c7d0450
+I (210) wifi:wifi certification version: v7.0
+I (210) wifi:config NVS flash: enabled
+I (220) wifi:config nano formating: enabled
+I (220) wifi:Init data frame dynamic rx buffer num: 32
+I (230) wifi:Init management frame dynamic rx buffer num: 32
+I (230) wifi:Init management short buffer num: 32
+I (240) wifi:Init dynamic tx buffer num: 32
+I (240) wifi:Init static tx FG buffer num: 2
+I (240) wifi:Init static rx buffer size: 1600
+I (250) wifi:Init static rx buffer num: 10
+I (250) wifi:Init dynamic rx buffer num: 32
+I (260) wifi_init: rx ba win: 6
+I (260) wifi_init: tcpip mbox: 32
+I (260) wifi_i

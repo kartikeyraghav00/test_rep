@@ -1,0 +1,1 @@
+This is a getting started guide to read, save and write to SPIFFS from ESP32 using ESP-IDF.
